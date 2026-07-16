@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Download, FileText, Eye } from "lucide-react";
-import resume from "@/assets/resume.pdf.asset.json";
 import { SectionHeader } from "./Section";
 
 export function Resume() {
@@ -41,14 +40,14 @@ export function Resume() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
-                  href={resume.url}
+                href="/Manosin_Balaji_Resume.pdf"
                   download="Manosin_Balaji_Resume.pdf"
                   className="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-[#00e5ff] to-[#7b2ff7] px-5 py-3 text-sm font-semibold text-white shadow-[0_0_25px_rgba(0,229,255,0.4)] transition hover:scale-[1.03]"
                 >
                   <Download className="h-4 w-4" /> Download Resume
                 </a>
                 <a
-                  href={resume.url}
+                  href="/Manosin_Balaji_Resume.pdf"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10"
@@ -61,7 +60,7 @@ export function Resume() {
             <div className="relative">
               <div className="glass-strong relative mx-auto aspect-[3/4] w-full max-w-xs overflow-hidden rounded-2xl">
                 <object
-                  data={`${resume.url}#toolbar=0&navpanes=0&view=FitH`}
+                  data="/Manosin_Balaji_Resume.pdf#toolbar=0&navpanes=0&view=FitH"
                   type="application/pdf"
                   className="h-full w-full"
                   aria-label="Resume preview"
