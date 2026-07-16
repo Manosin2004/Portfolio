@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
-import resume from "@/assets/resume.pdf.asset.json";
 import { MagneticButton } from "./MagneticButton";
 
 const roles = [
@@ -113,7 +112,7 @@ export function Hero() {
               View Projects <ArrowRight className="h-4 w-4" />
             </MagneticButton>
             <MagneticButton
-              href={resume.url}
+           href="/Manosin_Balaji_Resume.pdf"
               {...({ download: "Manosin_Balaji_Resume.pdf" } as Record<string, unknown>)}
               className="glass rounded-2xl px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
             >
